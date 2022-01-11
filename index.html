@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form | NRL Games</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Header Section Begin -->
+    <header>
+      <h1 id="title">NRL Games Survey Form</h1>
+      <p id="description">Thank you for taking your time to fill out this survey form</p>
+    </header>
+    <!-- Header End -->
+
+    <!-- Form Section Begin -->
+    <form id="survey-form">
+      <div class="form-group">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email" id="email-label">Email</label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="country" id="country-label">Country</label>
+        <input type="text" name="country" id="country" class="form-control" placeholder="Enter your country" required>
+      </div>
+
+      <div class="form-group">
+        <label for="number" id="number-label">Age</label>
+        <input type="number" name="age" id="number" class="form-control" min="10" max="100" placeholder="Age" required>
+      </div>
+
+      <div class="form-group">
+        <label for="gamer" id="gamer-label">What type of gamer are you?</label>
+        <select name="gamer" id="dropdown" class="form-control" required>
+          <option disabled selected value>Select current type</option>
+          <option value="hardcore">Hardcore</option>
+          <option value="casual">Casual</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="platform" id="platform-label">What platform do you play on?</label>
+        <label><input type="checkbox" name="platform" class="input-checkbox" value="playstation">PlayStation</label>
+        <label><input type="checkbox" name="platform" class="input-checkbox" value="xbox-one">Xbox One</label>
+        <label><input type="checkbox" name="platform" class="input-checkbox" value="nintendo-switch">Nintendo Switch</label>
+        <label><input type="checkbox" name="platform" class="input-checkbox" value="pc">PC</label>
+        <label><input type="checkbox" name="platform" class="input-checkbox" value="mobile">Mobile</label>
+      </div>
+
+      <div class="form-group">
+        <label for="favorite" id="favorite-label">What's your favorite game?</label>
+        <input type="text" name="favorite" id="favorite" class="form-control" placeholder="Enter your favorite game" required>
+      </div>
+
+      <div class="form-group">
+        <label for="genre" id="genre-label">What genre of game do you play?</label>
+        <div class="left">
+          <label><input type="checkbox" name="genre" class="input-checkbox" value="action">Action</label>
+          <label><input type="checkbox" name="genre" class="input-checkbox" value="adventure">Adventure</label>
+          <label><input type="checkbox" name="genre" class="input-checkbox" value="role-playing">Role-playing</label>
+          <label><input type="checkbox" name="genre" class="input-checkbox" value="shooter">Shooter</label>
+          <label><input type="checkbox" name="genre" class="input-checkbox" value="sport">Sport</label>
+        </div>
+
+        <div class="right">
+          <label><input type="checkbox" name="genre" class="input-checkbox" value="simulation">Simulation</label>
+          <label><input type="checkbox" name="genre" class="input-checkbox" value="racing">Racing</label>
+          <label><input type="checkbox" name="genre" class="input-checkbox" value="card">Card Game</label>
+          <label><input type="checkbox" name="genre" class="input-checkbox" value="music">Music Game</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="bought" id="bought-label">Have you ever bought a virtual item in a game?</label>
+        <label><input type="radio" name="bought" class="input-radio" value="yes">Yes</label>
+        <label><input type="radio" name="bought" class="input-radio" value="no">No</label>
+      </div>
+
+      <div class="form-group">
+        <label for="range" id="range-label">How much do you spend playing games in a month?</label>
+        <label><input type="radio" name="range" class="input-radio" value="less-than-10">Less than $10</label>
+        <label><input type="radio" name="range" class="input-radio" value="10-50">$10 - $50</label>
+        <label><input type="radio" name="range" class="input-radio" value="50-100">$50 - $100</label>
+        <label><input type="radio" name="range" class="input-radio" value="more-than-100">More than $100</label>
+      </div>
+
+      <div class="form-group">
+        <label for="comments" id="comments-label">Any comments or suggestions?</label>
+        <textarea name="comments" id="comments" class="input-textarea" placeholder="Enter your comments here..."></textarea>
+      </div>
+
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">Submit</button>
+      </div>
+    </form>
+    <!-- Form End -->
+  </div>
+</body>
+</html>
